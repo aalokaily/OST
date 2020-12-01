@@ -7,4 +7,9 @@ The decompression process will be by firstly decompressing each bin and the stre
 
 The seven scripts OST-DNA-bcm, OST-DNA-brotli, OST-DNA-bsc, OST-DNA-bzip2, OST-DNA-lrzip, OST-DNA-lzip, and OST-DNA-xz are python scripts for applying OST algorithm on DNA data and where the coorespndents tools (bcm, brotli, bsc, bzip2, lrzip, lzip, and xz) are used to compress the bins. For each tool a window length and label length are parameters. The description of these paramters are available at https://www.biorxiv.org/content/10.1101/2020.08.24.264366v1.full .
 
+For each script and in order to validate the command used for compression the bins (line number 149 in each script) and decompression the bins (line number 233 in each script) or change them according to your need, please go inside the script to do so.  
+
+To run the scripts:
+python OST-DNA-xxx.py $genome $label_length $window_length 
+
 For conatct, please email AA.12682@KHCC.JO (the email of the first author Anas Al-okaily).
