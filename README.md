@@ -10,6 +10,10 @@ The seven scripts OST-DNA-bcm, OST-DNA-brotli, OST-DNA-bsc, OST-DNA-bzip2, OST-D
 For each script and in order to validate the command used for compression the bins (line number 149 in each script) and decompression the bins (line number 233 in each script) or change them according to your need, please go inside the script to do so.  
 
 To run the scripts:
+Compressin
 python OST-DNA-xxx.py $genome $label_length $window_length 
+
+Decompression 
+python OST-DNA-xxx.py -d $genome.ost.7z
 
 For conatct, please email AA.12682@KHCC.JO (the email of the first author Anas Al-okaily).
