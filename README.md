@@ -16,7 +16,7 @@ To run the scripts:
 Compressin
 python OST-DNA-xxx.py $genome $label_length $window_length 
 
-Note: import huffman package must be installed. The scripts import this package. 
+Note: huffman package must be installed, as the scripts import this package. 
 
 Decompression 
 python OST-DNA-xxx.py -d $genome.ost.7z
