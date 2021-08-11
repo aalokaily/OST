@@ -1,0 +1,35 @@
+Tool	 Compression command 	 Decompression command 
+
+bcm	 bcm $genome_name 	 bcm -d -f $genome_name.bcm 
+blzpack	 blzpack $genome_file $genome_name.blz 	 blzpack $genome_name.blz $genome_file 
+brotli	 brotli $genome_file -c > $genome_name.br 	 brotli -d $genome_name.br -c > $genome_file 
+bsc	 bsc e $genome_file $genome_name.bsc -t -T 	 bsc d $genome_name.bsc $genome_file 
+bzip2	 bzip2 -k -c $genome_file > $genome_name.bz2 	 bunzip2 $genome_name.bz2 
+cmix	 cmix -c $genome_file ./$genome_name.cmix 	 cmix -d ./$genome_name.cmix ./$genome_file 
+compress	 compress $genome_file -c > $genome_name.Z 	 compress -d $genome_name.Z -c > $genome_file 
+freeze	 freeze -c $genome_file > $genome_name.F 	 freeze -d -c $genome_file > $genome_file 
+gzip	 gzip $genome_file -c > $genome_name.gz 	 gunzip -d $genome_name.gz -c > $genome_file 
+HE	 huffman -e $genome_name > $genome_name.hf 	 huffman -d $genome_name.hf > $genome_file 
+hook	 hook08e c 256 2 1 255 $genome_file $genome_name.hk 	 hook08e d $genome_name.hk 
+lizard	 lizard -f -c $genome_file > $genome_name.lzd 	 lizard -f -c -d $genome_name.lzd > $genome_file 
+lrzip	 lrzip -q -N 1 -f $genome_file -o $genome_name.lrz 	 lrzip -d -q -N 1 -f $genome_name.lrz -o $genome_file 
+lz4	 lz4 $genome_file -c > $genome_name.lz4 	 lz4 -d $genome_name.lz4 -c > $genome_file 
+lzb	 lzb < $genome_file > $genome_name.lzb 	 lzb -d < $genome_name.lzb > $genome_file 
+lzfse	 lzfse -encode -i $genome_file > $genome_name.lzfse 	 lzfse -decode -i $genome_name.lzfse > $genome_file 
+lzip	 lzip -c $genome_file > $genome_name.lz 	 lzip -d -c $genome_name.lz > $genome_file 
+lzop	 lzop $genome_file -c > $genome_name.lzo 	 lzop -d $genome_name.lzo -c > $genome_file 
+LzTurbo	 lzturbo -32 -o -f $genome_file > $genome_name.lzt 	 lzturbo -32 -o -f -d $genome_name.lzt > $genome_file 
+nakamichi	 nakamichi $genome_file $genome_name.Nakamichi 	 nakamichi $genome_name.Nakamichi > $genome_file 
+pbzip2	 pbzip2 -k -c $genome_file -p1 > $genome_name.bz2 	 pbzip2 -d $genome_name.bz2 -p1 
+pigz	 pigz $genome_file -c -p 1 > $genome_name.gz 	 pigz -d $genome_name.gz -c -p 1 > $genome_file 
+ppm	 ppm c $genome_file $genome_name.ppm 	 ppm d $genome_name.ppm $genome_file 
+qzip	 qzip $genome_name 	 qunzip -d $genome_name.qz 
+rans	 rANS_static -o1 $genome_file $genome_name.rans1 	 rANS_static -d $genome_name.rans1 $genome_file 
+rzip	 rzip -k $genome_file -o $genome_name.rz 	 rzip -d -f $genome_name.rz 
+snzip	 snzip -c $genome_file > $genome_name.sz 	 snzip -d -c $genome_name.sz > $genome_file 
+srank	 srank  $genome_file 	 srank $genome_name.sr 
+xz	 xz -z -c $genome_file > $genome_name.xz 	 xz -d $genome_name.xz -c > $genome_file 
+zip	 zip $genome_name.zip $genome_file 	 unzip $genome_name.zip 
+zlib	 openssl zlib -e -in $genome_file > $genome_name.zlib 	 openssl zlib -d -in $genome_name.zlib > $genome_file 
+zpipe	 zpipe < $genome_file > $genome_name.z 	 zpipe -d < $genome_name.z > $genome_file 
+zstd	 zstd -f $genome_file -o $genome_name.zst 	 zstd -d -f $genome_name.zst 
