@@ -15,11 +15,14 @@ python /gcrf/KHCC/CTAG/NGS/scripts/filter_DNA_file_to_4_bases_and_N.py $file.fas
 
 To run the scripts:
 Compressin
+
 python OST-DNA-xxx.py $genome $label_length $window_length 
 
 Note: huffman package must be installed, as the scripts import this package. 
 
 Decompression 
+
 python OST-DNA-xxx.py -d $genome.ost.7z
+
 
 For conatct, please email AA.12682@KHCC.JO (the email of the first author Anas Al-okaily).
