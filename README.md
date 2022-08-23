@@ -13,7 +13,7 @@ For each script and in order to validate the command used for compression the bi
 
 Firstly, you may convert the genome in fasta format to a one-line genome which remove any non A, C, G, T, and N (case is sensistive) and headers. This can be done using the script filter_DNA_file_to_4_bases_and_N.py by running the command:
 
-python /gcrf/KHCC/CTAG/NGS/scripts/filter_DNA_file_to_4_bases_and_N.py $file.fasta 
+python filter_DNA_file_to_4_bases_and_N.py $file.fasta 
 
 ----------------------------------------------- Running the scripts ------------------------------------------------------------------------------------
 Compressin
