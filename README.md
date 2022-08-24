@@ -16,7 +16,7 @@ Firstly, you may convert the genome in fasta format to a one-line genome which r
 python filter_DNA_file_to_4_bases_and_N.py $file.fasta 
 
 ----------------------------------------------- Running the scripts ------------------------------------------------------------------------------------
-Compressing
+Compression
 
 python OST-DNA-xxx.py $genome $label_length $window_length 
 
