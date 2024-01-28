@@ -1,4 +1,4 @@
-Tool	 Compression command 	 Decompression command 
+Tool	 Compression command 	 Decompression command
 
 bcm	 bcm $genome_name 	 bcm -d -f $genome_name.bcm 
 blzpack	 blzpack $genome_file $genome_name.blz 	 blzpack $genome_name.blz $genome_file 
