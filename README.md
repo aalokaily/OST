@@ -1,4 +1,4 @@
-# OST
+# OST 
 The scripts are implementation of OST algorithm which is a novel encoding algorithm for data compression. The full description is available at https://www.biorxiv.org/content/10.1101/2020.08.24.264366v1.full. The name of encoding algorithm is after Anas Al-okaily, Pramod Srivastava, and Abdelghani Tbakhi (Okaily-Srivastava-Tbakhi).
 
 Briefly and generally speaking, the algorithm starts by scanning the DNA data with non-overlapping windows, label the sequence within each window, concatenate it with the sequences in a bin correspondent to that label, and then output the label into a stream. Now, encode the labels of the bins based on, for instance, the number of the sequences in the bins; compress the stream of labels using the label codes. Then, compress the sequences in each bin using suitable compression algorithm depending on the content of the sequences in that bin. Finally, compress all the compression results (bins and stream of labels) together. 
